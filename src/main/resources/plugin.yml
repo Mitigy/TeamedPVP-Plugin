@@ -1,0 +1,69 @@
+name: teamedpvp
+version: '${project.version}'
+main: com.mitigy.teamedpvp.teamedpvp
+api-version: 1.18
+authors: [ Mitigy ]
+description: A custom plugin where players fight to get all players on their own team.
+depend: [ Essentials, LuckPerms]
+
+commands:
+  ping:
+    description: PING! PONG!
+    #usage: /<command>
+    #permission: teamedpvp.ping
+  joinqueue:
+    description: Lets you join the game's queue.
+    #usage: /<command>
+    #permission: teamedpvp.ping
+  setpersistentdata:
+    description: Lets you set an item's persistent data. Allowed values are can-interact and execute-command
+    #usage: /<command>
+    #permission: teamedpvp.ping
+  forcestart:
+    description: Forcefully starts the game.
+    #    #usage: /<command>
+    #    #permission: teamedpvp.ping
+  pickmode:
+    description: Allows the player to pick the mode they want to be in.
+    #    #usage: /<command>
+    #    #permission: teamedpvp.ping
+  spectatemode:
+    description: Puts the player into spectating mode.
+    #    #usage: /<command>
+    #    #permission: teamedpvp.ping
+  playmode:
+    description: Puts the player into play mode.
+    #    #usage: /<command>
+    #    #permission: teamedpvp.ping
+  stats:
+    description: Shows a player's stats.
+    #    #usage: /<command>
+    #    #permission: teamedpvp.ping
+  setkills:
+    description: Allows a player's kills to be to set to any whole number.
+    #    #usage: /<command>
+    #    #permission: teamedpvp.ping
+  setdeaths:
+    description: Allows a player's deaths to be to set to any whole number.
+    #    #usage: /<command>
+    #    #permission: teamedpvp.ping
+  setlevel:
+    description: Allows a player's level to be to set to any whole number.
+    #    #usage: /<command>
+    #    #permission: TeamedPVP.ping
+
+permissions:
+  teamedpvp.forcestart:
+    description: Gives permission to forcefully start a game using the /forcestart command
+    default: op
+  teamedpvp.setpersistentdata:
+    description: Gives permission to set persistent data on an item using the /setpersistentdata <key> <data> command
+    default: op
+  teamedpvp.setkills:
+    description: Gives permission to set a player's kills using the /setkills <target> command
+    default: op
+  teamedpvp.setdeaths:
+    description: Give permission to set a player's deaths using the /setdeaths <target> command
+    default: op
+  teamedpvp.setlevel:
+    description: Gives permission to set a player's level using the /setlevel <target> command
